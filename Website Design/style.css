@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(19, 199, 19) !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 3px solid rgb(19, 199, 19);
+}
+#navbarSupportedContent button{
+    background-color: rgb(19, 199, 19);
+    width: 5rem;
+    border-radius: 15px;
+}
+
+/******** Home page style **********/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url('./images/spices.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+#home h1{
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(241, 90, 34);
+    text-shadow: 0px 1px 0px rgb(206, 64, 8),
+                 0px 2px 0px rgb(206, 64, 8),
+                 0px 3px 0px rgb(206, 64, 8),
+                 0px 4px 0px rgb(206, 64, 8),
+                 0px 5px 0px rgb(206, 64, 8),
+                 0px 6px 0px rgb(206, 64, 8),
+                 0px 7px 0px rgb(206, 64, 8);
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+    
+}
+.signin{
+    background-color: rgb(22, 167, 22) !important;
+    color: white;
+    box-shadow: 2px 4px 5px rgba();
+    margin-left: 10px;
+}
+
+/**************** about ***********/
+
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(230, 93, 43);
+}
+#about h4{
+    font-weight: bold;
+}
+#about p{
+    text-align:justify;
+    text-indent: 50px;
+}
+#about img{
+    height: 250px;
+    width: 250px;
+    margin: 0 70px;
+}
+            /* Customer review */
+#about h2{
+    font-weight: 700;
+    color:rgb(230, 93, 43);
+}
+
+/******* product *************/
+
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: rgb(230, 93, 43);
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,0.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.3),
+                inset -4px -4px 10px white;
+}
+
+/******* contact *****/
+#contact h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: rgb(230, 93, 43);
+}
+#contact img{
+    height: 100%;
+    width: 70%;
+}
+.box{
+    width: 80%;
+    margin-top: 100px;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+.footer{
+    padding: 15px;
+    margin-top: 20px;
+    background: linear-gradient(90deg,rgb(4, 104, 4),rgb(52, 228, 52),rgb(4, 104, 4));
+    font-weight: bold;
+}
+.footer i{
+    padding: 10px;
+    height:30px;
+    width: 30px;
+    color: black;
+} 
+span{
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    <style>
+        body{
+            background: linear-gradient(90deg,purple,violet,purple);
+        }
+        img{
+            width: 310px;
+            height: 240px;
+            position: absolute; /*absolute arranges the images one behind another like rummy cards*/
+        }
+        .container{
+            width: 400px;
+            height: 250px;
+            position: relative;
+            margin-top: 10%;
+            margin-left: 40%;
+            perspective: 1000px; /*to show image like folded*/
+            transform-style: preserve-3d; /*to make 3d effect */
+            transform: rotateX(-10deg) rotateZ(-10deg);  /*to make image slanding*/
+            animation: ror 20s linear infinite;
+        }
+        @keyframes ror{
+            50%{
+                transform: rotateX(8deg);
+            }
+            80%{
+                transform: rotateX(-30deg);
+            }
+        }
+        .images{
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation:rotate 20s linear infinite;
+        }
+        @keyframes rotate{      /*for keyframes we can set values in either % or from-to*/
+            from{
+
+            }
+            to{
+                transform: rotateY(360deg);
+            }
+        }
+        img:nth-child(1){    /*denotes first child which is 1rst image*/
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        img:nth-child(2){    /*denotes first child which is 1rst image*/
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        img:nth-child(3){    /*denotes first child which is 1rst image*/
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        img:nth-child(4){    /*denotes first child which is 1rst image*/
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        img:nth-child(5){    /*denotes first child which is 1rst image*/
+            transform: rotateY(300deg) translateZ(300px);
+        }
+        img:nth-child(6){    /*denotes first child which is 1rst image*/
+            transform: rotateY(360deg) translateZ(300px);
+        }
+        img:hover{
+            width: 330px;
+            height: 250px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <img src="./images/tomjerry.jpg" alt="">
+            <img src="./images/bheem.jpg" alt="">
+            <img src="./images/mrbean.jpg" alt="">
+            <img src="./images/jackiechan.jpg" alt="">
+            <img src="./images/power-rangers-samurai.jpg" alt="">
+            <img src="./images/benten.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

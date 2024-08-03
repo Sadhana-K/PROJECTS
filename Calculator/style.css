@@ -1,0 +1,29 @@
+body,html{
+    margin: 0;
+}
+.container{
+    border: 2px solid black;
+    margin: 100px auto;
+}
+#display{
+    width: 500px;
+    height: 80px;
+    margin-top: 10px;
+    border: 2px solid blue;
+}
+.buttons_container{
+    margin: 20px;
+}
+button{
+    height: 50px;
+    width: 50px;
+}
+.col-6 button{
+    width: 160px;
+}
+.col,.col-3,.col-6{
+    text-align: center;
+}
+.col-6{
+    text-align: center;
+}
